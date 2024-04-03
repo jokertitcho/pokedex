@@ -1,4 +1,5 @@
 import React from 'react';
+import Pokemon from './Pokemon';
 
 const LastCapturePokemons = ({pokemons}) => {
     
@@ -14,10 +15,7 @@ const LastCapturePokemons = ({pokemons}) => {
             {threeLast.map((e)=>{
                 return (
                     <>
-                        <h2>{e.name}</h2>
-                        <img src={e.image} alt={e.name} />
-                        <p>Categorie {e.type}</p>
-                        <p>Date {e.capturedAt}</p>
+                        <Pokemon pok={e} />
                     </>   
                 )
             })

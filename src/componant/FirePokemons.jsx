@@ -1,4 +1,5 @@
 import React from 'react';
+import Pokemon from './Pokemon';
 
 const FirePokemons = ({pokemons}) => {
     
@@ -13,9 +14,7 @@ const FirePokemons = ({pokemons}) => {
             {filterPokemon.map((e)=>{
                 return (
                     <>
-                        <h2>{e.name}</h2> 
-                        <img src={e.image} alt={e.name}/>
-                        <p>categorie {e.type}</p>
+                       <Pokemon pok={e}/>
                     </>
                 )
 

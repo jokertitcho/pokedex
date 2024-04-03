@@ -1,4 +1,5 @@
 import React from 'react';
+import Pokemon from './Pokemon';
 
 const RandomPokemon = ({pokemons}) => {
     
@@ -7,10 +8,7 @@ const RandomPokemon = ({pokemons}) => {
     return (
         <div>
            <h2>pokemon generé au hazar</h2> 
-           <h2>{randomPok.name}</h2> 
-           <img src={randomPok.image} alt={randomPok.name}/>
-           <p>categorie {randomPok.type}</p>
-           <p>Date {randomPok.capturedAt}</p>
+           <Pokemon pok={randomPok}/>
         </div>
     );
 };
